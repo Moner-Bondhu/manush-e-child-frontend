@@ -10,7 +10,7 @@
             if(!localStorage.getItem('child_id')){
                 this.$router.push({ path: `/child/initiate` });
             } else {
-                axios({ method: "GET", "url": `http://mbunicef.localhost/api/forms` }).then(result => {
+                axios({ method: "GET", "url": `${import.meta.env.VITE_BACKEND_URL}/api/forms` }).then(result => {
                     console.log(result);
                     this.forms = result.data.data;
                 }, error => {

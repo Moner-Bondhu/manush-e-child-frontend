@@ -20,7 +20,7 @@ export default {
     },
 
     async create() {
-    axios.post(`http://mbunicef.localhost/api/child/create`, {
+    axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/child/create`, {
                         child_name: this.child_name,
                         child_age: this.child_age,
                         child_gender: this.child_gender,

@@ -19,7 +19,7 @@
         mounted() {
             axios.get('https://api.ipify.org?format=json')
                 .then(response => {
-                    axios.post(`http://mbunicef.localhost/api/form/result`, {
+                    axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/form/result`, {
                         ip: response.data.ip,
                         form_id: this.$route.params.id,
                         store: this.questionsStore.form.questions,

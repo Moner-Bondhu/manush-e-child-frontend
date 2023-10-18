@@ -13,7 +13,7 @@ export const useQuestionsStore = defineStore('questions', {
         async fetchForm(id) {
           try {
             var response = await axios.get(
-                "http://mbunicef.localhost/api/form/" + id
+                `${import.meta.env.VITE_BACKEND_URL}/api/form/` + id
               );
             this.form = response.data.data;
           } catch (error) {
