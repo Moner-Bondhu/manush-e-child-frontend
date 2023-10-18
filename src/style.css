@@ -1,0 +1,43 @@
+.LOGO {
+  width: 4.6875rem;
+}
+
+/* 
+
+logo-color-1 : #f2684e
+logo-color-2 : #f2684e
+logo-color-3 : #f2684e
+accent : #f44236
+
+
+*/
+#number {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#number option {
+/*   width: 100%x; */
+  font-size: small;
+
+}
+@media only screen and (max-width : 350px) {
+  #number option {
+      width: 100%x;
+      font-size: 12px;
+  
+    }
+      
+}
+@media only screen and (max-width : 320px) {
+  #number option {
+    width: 100%x;
+    font-size: 10px;
+
+  }
+
+}
+:disabled{
+  opacity: 25%;
+}
