@@ -7,6 +7,8 @@ import Result from '../components/Result.vue';
 import Privacy from '../components/Privacy.vue';
 import ChildSelection from '../components/ChildSelection.vue';
 
+import AdminDashboard from '../components/AdminDashboard.vue';
+
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -30,18 +32,22 @@ const router = createRouter({
             component: Form,
             props: (route) => ({
                 formId: route.params.id
-            })            
+            })
         },
         {
             path: '/form/result/:id',
             component: Result,
             props: (route) => ({
                 formId: route.params.id
-            })            
+            })
         },
         {
             path: '/privacy',
             component: Privacy
+        },
+        {
+            path: '/admin',
+            component: AdminDashboard
         }
     ]
 });
