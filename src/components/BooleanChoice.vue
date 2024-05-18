@@ -11,7 +11,7 @@ const props = defineProps(['answer', 'question'])
                     
                     <li>
                         <input @input="$emit('updateAnswer', $event.target.value)" type="radio" id="yes" name="choice" :checked="answer == 'yes'" value="yes" class="hidden peer" required>
-                        <label for="yes" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-gray-700 peer-checked:text-primary peer-checked:border-primary peer-checked:text-primaryDark hover:text-gray-600 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-gray-700">                           
+                        <label for="yes" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-gray-700 peer-checked:text-primary peer-checked:border-primary hover:text-gray-600 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-gray-700">                           
                             <div class="block">
                                 <div class="w-full text-lg font-semibold">Yes</div>
                                 <!-- <div class="w-full">extra info</div> -->
@@ -21,7 +21,7 @@ const props = defineProps(['answer', 'question'])
 
                     <li>
                         <input @input="$emit('updateAnswer', $event.target.value)" type="radio" id="no" name="choice" :checked="answer == 'no'" value="no" class="hidden peer" required>
-                        <label for="no" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-gray-700 peer-checked:text-primary peer-checked:border-primary peer-checked:text-primaryDark hover:text-gray-600 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-gray-700">                           
+                        <label for="no" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-gray-700 peer-checked:text-primary peer-checked:border-primary hover:text-gray-600 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-gray-700">                           
                             <div class="block">
                                 <div class="w-full text-lg font-semibold">No</div>
                                 <!-- <div class="w-full">extra info</div> -->
