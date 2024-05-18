@@ -5,28 +5,49 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <div class="grid card sm:grid-cols-2 container mx-auto my-8 text-center gap-8 w-[90%]">
+    <div class="grid md:grid-cols-2 container mx-auto my-8 text-center gap-8 w-[90%]">
         <RouterLink :to="`/child/initiate`">
-            <div class="">
-                <div class="rounded-lg hover:bg-gray-800 hover:text-white ease-in duration-100">
-                    <div class="py-2">
+            <div class="shadow rounded-2xl">
+                <div class="rounded-lg hover:bg-[#f2684e] hover:text-white ease-in duration-100 grid grid-cols-4">
+                    <div class="py-2 col-span-1">
                         <img src="https://monerbondhu-vs.s3.ap-southeast-1.amazonaws.com/monerbondhu-files/content/games/images/_bb8fcece-3ef5-4da5-91e8-b7ebc5a75ec8.jpeg"
-                            alt="" class="w-[50%] mx-auto">
+                            alt="" class="w-[100%] mx-auto">
                     </div>
-                    <h2 class="text-2xl  rounded-t-lg py-2">Login as child</h2>
-                    <p class="py-4">Login as a child and add data to a child profile</p>
+                    <div class="col-span-3 text-left p-4 my-auto">
+                        <h2 class="text-2xl  rounded-t-lg font-semibold">Login as child</h2>
+                        <p class="py-4">Login as a child and add data to a child profile</p>
+                    </div>
+
                 </div>
             </div>
         </RouterLink>
         <RouterLink :to="`admin`">
-            <div class="">
-                <div class="rounded-lg hover:bg-gray-800 hover:text-white ease-in duration-100">
-                    <div class="py-2">
+            <div class="shadow rounded-2xl">
+                <div class="rounded-lg hover:bg-[#f2684e] hover:text-white ease-in duration-100 grid grid-cols-4">
+                    <div class="py-2 col-span-1">
                         <img src="https://monerbondhu-vs.s3.ap-southeast-1.amazonaws.com/monerbondhu-files/content/games/images/_eabc442d-be0f-4930-a3e3-594811779dc5.jpeg"
-                            alt="" class="w-[50%] mx-auto">
+                            alt="" class="w-[100%] mx-auto">
                     </div>
-                    <h2 class="text-2xl  rounded-t-lg py-2">Login as Admin</h2>
-                    <p class="py-4">Login as an administrator and generate reports</p>
+                    <div class="col-span-3 text-left p-4 my-auto">
+                        <h2 class="text-2xl  rounded-t-lg font-semibold">Login as Admin</h2>
+                        <p class="py-4">Login as an administrator and generate reports</p>
+                    </div>
+
+                </div>
+            </div>
+        </RouterLink>
+        <RouterLink :to="``">
+            <div class="shadow rounded-2xl">
+                <div class="rounded-lg hover:bg-[#f2684e] hover:text-white ease-in duration-100 grid grid-cols-4">
+                    <div class="py-2 col-span-1">
+                        <img src="https://monerbondhu-vs.s3.ap-southeast-1.amazonaws.com/monerbondhu-files/content/games/images/_eabc442d-be0f-4930-a3e3-594811779dc5.jpeg"
+                            alt="" class="w-[100%] mx-auto">
+                    </div>
+                    <div class="col-span-3 text-left p-4 my-auto">
+                        <h2 class="text-2xl  rounded-t-lg font-semibold">Login as Parent</h2>
+                        <p class="py-4">Login as an administrator and generate reports</p>
+                    </div>
+
                 </div>
             </div>
         </RouterLink>
@@ -36,7 +57,5 @@ import { RouterLink } from 'vue-router';
 </template>
 
 <style scoped>
-.card {
-    background-color: aliceblue;
-}
+
 </style>
