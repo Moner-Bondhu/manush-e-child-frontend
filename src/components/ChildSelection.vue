@@ -20,17 +20,17 @@ export default {
     },
 
     async create() {
-    axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/child/create`, {
-                        child_name: this.child_name,
-                        child_age: this.child_age,
-                        child_gender: this.child_gender,
-                    }).then(result => {
-                        this.child_id = result.data.data.child_id;
-                        localStorage.setItem('child_id', this.child_id)
-                        this.$router.push({ path: `/modules` });
-                    }, error => {
-                        console.error(error);
-                    });  
+      axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/child/create`, {
+        child_name: this.child_name,
+        child_age: this.child_age,
+        child_gender: this.child_gender,
+      }).then(result => {
+        this.child_id = result.data.data.child_id;
+        localStorage.setItem('child_id', this.child_id)
+        this.$router.push({ path: `/modules` });
+      }, error => {
+        console.error(error);
+      });
     },
   },
 };
@@ -114,9 +114,7 @@ export default {
 </template>
 
 <style scoped>
-
-.card{
-    background-color: aliceblue;
+.card {
+  background-color: aliceblue;
 }
-
 </style>

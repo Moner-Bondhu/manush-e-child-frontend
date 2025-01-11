@@ -12,7 +12,7 @@ const store = useQuestionsStore();
 function handleChange(value) {
   console.log("Emitted");
   store.form.questions[props.viewId].answer = value
-  if(value){
+  if (value) {
     console.log(store.form.questions[props.viewId].answer)
     emit('answered')
   } else {
@@ -21,7 +21,7 @@ function handleChange(value) {
 }
 
 onMounted(() => {
-  if(store.form.questions[props.viewId].answer){
+  if (store.form.questions[props.viewId].answer) {
     emit('answered')
   }
 })
@@ -29,13 +29,12 @@ onMounted(() => {
 
 <template>
 
-               
-<div class="xl:w-3/4 mx-auto my-2 ANSWER">
-        <component @updateAnswer="handleChange" :is="question.type" :answer="store.form.questions[viewId].answer" :question="store.form.questions[viewId]"></component>
-</div>
-                
+
+  <div class=" mx-auto my-2 ANSWER">
+    <component @updateAnswer="handleChange" :is="question.type" :answer="store.form.questions[viewId].answer"
+      :question="store.form.questions[viewId]"></component>
+  </div>
+
 </template>
 
-<style>
-
-</style>
+<style></style>
